@@ -41,8 +41,23 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonLogoutSplash"
+        android:id="@+id/buttonImplisitSplash"
         android:layout_below="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:width="300dp"
+        android:text="Share"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold1"
+        android:background="@drawable/button_shape"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLogoutSplash"
+        android:layout_below="@+id/buttonImplisitSplash"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20sp"
         android:width="300dp"

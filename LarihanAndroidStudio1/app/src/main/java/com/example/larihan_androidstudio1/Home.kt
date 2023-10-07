@@ -11,13 +11,31 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
         val buttonLogoutSplash: Button = findViewById(R.id.buttonLogoutSplash)
+        val buttonImplisitSplash: Button = findViewById(R.id.buttonImplisitSplash)
+
+        buttonImplisitSplash.setOnClickListener {
+            performShare()
+        }
 
         buttonLogoutSplash.setOnClickListener {
-            // Panggil fungsi logout
             performLogout()
         }
     }
 
+    private fun performShare(){
+        val emailIntent = Intent(Intent.ACTION_SEND)
+        emailIntent.type = "text/plain"
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, arrayOf("tujuan@example.com"))
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Subjek Email")
+        emailIntent.putExtra(Intent.EXTRA_TEXT, "Isi pesan email")
+
+        // Coba mulai aktivitas yang sesuai dengan intent
+        try {
+            startActivity(Intent.createChooser(emailIntent, "Kirim Email"))
+        } catch (ex: android.content.ActivityNotFoundException) {
+            // Handle jika tidak ada aplikasi email yang tersedia
+        }
+    }
     private fun performLogout() {
         // Hapus data login sementara (misalnya, token autentikasi)
         val sharedPreferences = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
