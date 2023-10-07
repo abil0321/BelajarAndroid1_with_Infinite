@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".Register">
+
+    <ImageView
+        android:layout_width="330dp"
+        android:layout_height="560dp"
+        android:src="@drawable/rectangle147a"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/card_regis"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello guys!"
+        android:fontFamily="@font/poppins1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:id="@+id/hello"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Izinkan kami membantu petualangan mu"
+        android:fontFamily="@font/poppinslight1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="1dp"
+        android:textSize="15dp"
+        android:layout_below="@+id/hello"
+        android:textColor="@color/black"
+        android:id="@+id/subTitle"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/subTitle"
+        android:paddingHorizontal="60dp">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/button_shape"
+            android:hint="Full Name"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/secondary_color"
+            android:id="@+id/name"
+            android:fontFamily="@font/poppinsregular1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/button_shape"
+            android:hint="Gender"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/secondary_color"
+            android:id="@+id/gender"
+            android:fontFamily="@font/poppinsregular1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/button_shape"
+            android:hint="Email"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/secondary_color"
+            android:id="@+id/email"
+            android:fontFamily="@font/poppinsregular1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/button_shape"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/secondary_color"
+            android:id="@+id/password"
+            android:fontFamily="@font/poppinsregular1"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="15dp"
+            android:background="@drawable/button_shape"
+            android:inputType="textPassword"
+            android:hint="Confirm Your Password"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/secondary_color"
+            android:id="@+id/cpassword"
+            android:fontFamily="@font/poppinsregular1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRegis"
+        android:layout_below="@+id/card_regis"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="Register"
+        android:layout_marginTop="13sp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold1"
+        android:background="@drawable/button_shape"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/buttonRegis"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah memiliki akun? "
+            android:textSize="12sp"
+            android:fontFamily="@font/poppinsregular1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textSize="12sp"
+            android:fontFamily="@font/poppins1"
+            android:textColor="@color/primary_color"
+            android:id="@+id/loginText"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

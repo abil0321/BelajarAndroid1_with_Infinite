@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hello"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/img1"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:id="@+id/title"
+        android:text="Selesaikan Semua dengan Santai"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold1"
+        android:textSize="18sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:text="Hilangkan Hari-hari mu yang terasa berat kawan, hancurkan stress mu dengan berjalan-jalan!"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinsregular1"
+        android:padding="25dp"
+        android:gravity="center"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonLoginSplash"
+        android:layout_below="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:width="300dp"
+        android:text="Login"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold1"
+        android:background="@drawable/button_shape"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonRegisSplash"
+        android:layout_below="@+id/buttonLoginSplash"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="Register"
+        android:layout_marginTop="13sp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppinssemibold1"
+        android:background="@drawable/button_shape"/>
+
+
+
+
+</RelativeLayout>
