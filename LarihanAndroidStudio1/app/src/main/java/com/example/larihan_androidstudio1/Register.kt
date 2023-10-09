@@ -3,6 +3,7 @@ package com.example.larihan_androidstudio1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.example.larihan_androidstudio1.databinding.ActivityRegisterBinding
 
 class Register : AppCompatActivity() {
@@ -14,6 +15,8 @@ class Register : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
+
+        val btnRegister = findViewById<Button>(R.id.)
 
         binding.loginText.setOnClickListener {
             val intent = Intent(this, Login::class.java)
