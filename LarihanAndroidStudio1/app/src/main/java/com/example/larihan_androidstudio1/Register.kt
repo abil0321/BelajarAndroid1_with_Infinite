@@ -16,7 +16,7 @@ class Register : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val btnRegister = findViewById<Button>(R.id.)
+        val btnRegister = findViewById<Button>(R.id.buttonRegis)
 
         binding.loginText.setOnClickListener {
             val intent = Intent(this, Login::class.java)
